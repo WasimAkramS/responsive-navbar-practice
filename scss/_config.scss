@@ -1,0 +1,19 @@
+$ff-primary: "Roboto", sans-serif;
+$clr-gray-1: hsl(210, 22%, 49%);
+$clr-gray-2: hsl(210, 36%, 96%);
+$clr-white: #fff;
+
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    
+    // max-width: 100%;
+}
+
