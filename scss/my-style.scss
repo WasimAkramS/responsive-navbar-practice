@@ -28,7 +28,7 @@ nav {
         display: none;
         font-size: 1.5rem;
         position: absolute;
-        top: 1em;
+        top: .7em;
         right: 1.5em;
         background-color: transparent;
         border: none;
@@ -66,31 +66,40 @@ img {
 @media( max-width: 55rem) {
     nav {
         flex-direction: column;
-        padding-block: .8em;
-        // justify-content: center;
+        padding-block: .5em;
+        // justify-content: space-between;
         align-items: flex-start;
 
         button {
             display: flex;
+            cursor: pointer;
+            transition: all 0.3s linear;
         }
 
         button:hover {
-            cursor: pointer;
+            transform: rotate(90deg);
         }
 
         .nav-links {
             flex-direction: column;
-            display: none;
+            height: 0;
+            overflow: hidden;
             width: 100%;
+            transition: all 0.3s linear;
+
+            // align-items: flex-start;
  
             a {
                 display: block;
-                padding-block: .4em;                
+                padding-block: .4em;
+                transition: all 0.5s linear;                
             }
         }
 
         li {
             width: 100%;
+            transition: all 0.6s linear;
+
         }
     }   
 
@@ -100,6 +109,7 @@ img {
 
     .nav-links.active {
         display: block;
+        height: 9rem;
     }
 
 }
